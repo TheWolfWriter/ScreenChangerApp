@@ -2,5 +2,7 @@
 <resources>
     <color name="skyBlue">#0040FF</color>
     <color name="brightPink">#FF00BF</color>
+    <color name="smokyGrey">#6E6E6E</color>
+    <color name="lemonYellow">#FFFF00</color>
     
 </resources>

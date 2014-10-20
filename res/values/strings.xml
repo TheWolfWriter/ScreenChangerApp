@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Screen Changer App</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="secondScreenTitle">Second Screen :D</string>
+    <string name="firstScreenLabelText">This is my first screen</string>
+    <string name="title_activity_second">Second Screen :D</string>
+    <string name="secondScreenLabelText">Hello this is the second screen</string>
+    <string name="secondScreenButtonText">Go back to the previous screen</string>
+    <string name="firstScreenTitle">First Screeeeeeeen</string>
+    <string name="firstScreenButtonText">Click here to go to screen 2</string>
+    <string name="appName">Screen Changer App :D:D:D</string>
 
 </resources>
