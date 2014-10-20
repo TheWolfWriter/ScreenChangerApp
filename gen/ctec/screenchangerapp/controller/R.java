@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package ctec.screenchangerapp;
+package ctec.screenchangerapp.controller;
 
 public final class R {
     public static final class anim {
@@ -858,12 +858,14 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070005;
+        public static final int abc_search_url_text_holo=0x7f070007;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
         public static final int brightPink=0x7f070004;
+        public static final int lemonYellow=0x7f070006;
         public static final int skyBlue=0x7f070003;
+        public static final int smokyGrey=0x7f070005;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1087,7 +1089,6 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int button1=0x7f05003d;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1098,6 +1099,8 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int firstScreenButton=0x7f05003e;
+        public static final int firstScreenLabel=0x7f05003f;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1122,6 +1125,8 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int secondScreenButton=0x7f05003d;
+        public static final int secondScreenLabel=0x7f05003c;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1129,7 +1134,6 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int textView1=0x7f05003c;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1186,8 +1190,9 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_screen=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int activity_second=0x7f030018;
+        public static final int activity_starting=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1230,8 +1235,14 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int app_name=0x7f0a000d;
-        public static final int hello_world=0x7f0a000e;
+        public static final int appName=0x7f0a0014;
+        public static final int firstScreenButtonText=0x7f0a0013;
+        public static final int firstScreenLabelText=0x7f0a000e;
+        public static final int firstScreenTitle=0x7f0a0012;
+        public static final int secondScreenButtonText=0x7f0a0011;
+        public static final int secondScreenLabelText=0x7f0a0010;
+        public static final int secondScreenTitle=0x7f0a000d;
+        public static final int title_activity_second=0x7f0a000f;
     }
     public static final class style {
         /** 
@@ -1477,26 +1488,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background ctec.screenchangerapp:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit ctec.screenchangerapp:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked ctec.screenchangerapp:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout ctec.screenchangerapp:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions ctec.screenchangerapp:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #ActionBar_divider ctec.screenchangerapp:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #ActionBar_height ctec.screenchangerapp:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout ctec.screenchangerapp:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_icon ctec.screenchangerapp:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ctec.screenchangerapp:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding ctec.screenchangerapp:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
+           <tr><td><code>{@link #ActionBar_background ctec.screenchangerapp.controller:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit ctec.screenchangerapp.controller:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked ctec.screenchangerapp.controller:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout ctec.screenchangerapp.controller:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions ctec.screenchangerapp.controller:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #ActionBar_divider ctec.screenchangerapp.controller:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #ActionBar_height ctec.screenchangerapp.controller:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout ctec.screenchangerapp.controller:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_icon ctec.screenchangerapp.controller:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ctec.screenchangerapp.controller:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding ctec.screenchangerapp.controller:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
              system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_logo ctec.screenchangerapp:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode ctec.screenchangerapp:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding ctec.screenchangerapp:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle ctec.screenchangerapp:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle ctec.screenchangerapp:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle ctec.screenchangerapp:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionBar_title ctec.screenchangerapp:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle ctec.screenchangerapp:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionBar_logo ctec.screenchangerapp.controller:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode ctec.screenchangerapp.controller:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding ctec.screenchangerapp.controller:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle ctec.screenchangerapp.controller:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle ctec.screenchangerapp.controller:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle ctec.screenchangerapp.controller:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionBar_title ctec.screenchangerapp.controller:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle ctec.screenchangerapp.controller:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1809,7 +1820,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarLayout_android_layout_gravity ctec.screenchangerapp:android_layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarLayout_android_layout_gravity ctec.screenchangerapp.controller:android_layout_gravity}</code></td><td></td></tr>
            </table>
            @see #ActionBarLayout_android_layout_gravity
          */
@@ -1817,7 +1828,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010100b3
         };
         /**
-          <p>This symbol is the offset where the {@link ctec.screenchangerapp.R.attr#android_layout_gravity}
+          <p>This symbol is the offset where the {@link ctec.screenchangerapp.controller.R.attr#android_layout_gravity}
           attribute's value can be found in the {@link #ActionBarLayout} array.
           @attr name android:android_layout_gravity
         */
@@ -1831,17 +1842,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBar ctec.screenchangerapp:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay ctec.screenchangerapp:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor ctec.screenchangerapp:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowActionBar ctec.screenchangerapp.controller:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay ctec.screenchangerapp.controller:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor ctec.screenchangerapp.controller:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
              that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor ctec.screenchangerapp:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor ctec.screenchangerapp.controller:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor ctec.screenchangerapp:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor ctec.screenchangerapp.controller:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor ctec.screenchangerapp:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor ctec.screenchangerapp.controller:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
              that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar ctec.screenchangerapp:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar ctec.screenchangerapp.controller:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #ActionBarWindow_windowActionBar
            @see #ActionBarWindow_windowActionBarOverlay
@@ -1856,7 +1867,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010004, 0x7f010005, 0x7f010006
         };
         /**
-          <p>This symbol is the offset where the {@link ctec.screenchangerapp.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link ctec.screenchangerapp.controller.R.attr#windowActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1870,7 +1881,7 @@ containing a value of this type.
         */
         public static final int ActionBarWindow_windowActionBar = 0;
         /**
-          <p>This symbol is the offset where the {@link ctec.screenchangerapp.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link ctec.screenchangerapp.controller.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1976,7 +1987,7 @@ containing a value of this type.
         */
         public static final int ActionBarWindow_windowFixedWidthMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link ctec.screenchangerapp.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link ctec.screenchangerapp.controller.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1995,7 +2006,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMenuItemView_android_minWidth ctec.screenchangerapp:android_minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMenuItemView_android_minWidth ctec.screenchangerapp.controller:android_minWidth}</code></td><td></td></tr>
            </table>
            @see #ActionMenuItemView_android_minWidth
          */
@@ -2003,7 +2014,7 @@ containing a value of this type.
             0x0101013f
         };
         /**
-          <p>This symbol is the offset where the {@link ctec.screenchangerapp.R.attr#android_minWidth}
+          <p>This symbol is the offset where the {@link ctec.screenchangerapp.controller.R.attr#android_minWidth}
           attribute's value can be found in the {@link #ActionMenuItemView} array.
           @attr name android:android_minWidth
         */
@@ -2019,11 +2030,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background ctec.screenchangerapp:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit ctec.screenchangerapp:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_height ctec.screenchangerapp:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle ctec.screenchangerapp:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle ctec.screenchangerapp:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionMode_background ctec.screenchangerapp.controller:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit ctec.screenchangerapp.controller:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_height ctec.screenchangerapp.controller:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle ctec.screenchangerapp.controller:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle ctec.screenchangerapp.controller:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2109,8 +2120,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ctec.screenchangerapp:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ctec.screenchangerapp:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ctec.screenchangerapp.controller:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ctec.screenchangerapp.controller:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2157,7 +2168,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps ctec.screenchangerapp:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps ctec.screenchangerapp.controller:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2183,9 +2194,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutICS_divider ctec.screenchangerapp:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_dividerPadding ctec.screenchangerapp:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_showDividers ctec.screenchangerapp:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_divider ctec.screenchangerapp.controller:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_dividerPadding ctec.screenchangerapp.controller:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_showDividers ctec.screenchangerapp.controller:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
            </table>
            @see #LinearLayoutICS_divider
            @see #LinearLayoutICS_dividerPadding
@@ -2251,12 +2262,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuGroup_android_checkableBehavior ctec.screenchangerapp:android_checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_enabled ctec.screenchangerapp:android_enabled}</code></td><td> Whether the items are enabled.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_id ctec.screenchangerapp:android_id}</code></td><td> The ID of the group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_menuCategory ctec.screenchangerapp:android_menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_orderInCategory ctec.screenchangerapp:android_orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_visible ctec.screenchangerapp:android_visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_checkableBehavior ctec.screenchangerapp.controller:android_checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_enabled ctec.screenchangerapp.controller:android_enabled}</code></td><td> Whether the items are enabled.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_id ctec.screenchangerapp.controller:android_id}</code></td><td> The ID of the group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_menuCategory ctec.screenchangerapp.controller:android_menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_orderInCategory ctec.screenchangerapp.controller:android_orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_visible ctec.screenchangerapp.controller:android_visible}</code></td><td> Whether the items are shown/visible.</td></tr>
            </table>
            @see #MenuGroup_android_checkableBehavior
            @see #MenuGroup_android_enabled
@@ -2273,7 +2284,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the items are capable of displaying a check mark. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_checkableBehavior}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_checkableBehavior}.
           @attr name android:android_checkableBehavior
         */
         public static final int MenuGroup_android_checkableBehavior = 5;
@@ -2281,7 +2292,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the items are enabled. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_enabled}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_enabled}.
           @attr name android:android_enabled
         */
         public static final int MenuGroup_android_enabled = 0;
@@ -2289,7 +2300,7 @@ containing a value of this type.
           <p>
           @attr description
            The ID of the group. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_id}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_id}.
           @attr name android:android_id
         */
         public static final int MenuGroup_android_id = 1;
@@ -2298,7 +2309,7 @@ containing a value of this type.
           @attr description
            The category applied to all items within this group.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_menuCategory}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_menuCategory}.
           @attr name android:android_menuCategory
         */
         public static final int MenuGroup_android_menuCategory = 3;
@@ -2307,7 +2318,7 @@ containing a value of this type.
           @attr description
            The order within the category applied to all items within this group.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_orderInCategory}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_orderInCategory}.
           @attr name android:android_orderInCategory
         */
         public static final int MenuGroup_android_orderInCategory = 4;
@@ -2315,7 +2326,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the items are shown/visible. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_visible}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_visible}.
           @attr name android:android_visible
         */
         public static final int MenuGroup_android_visible = 2;
@@ -2325,26 +2336,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout ctec.screenchangerapp:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass ctec.screenchangerapp:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
+           <tr><td><code>{@link #MenuItem_actionLayout ctec.screenchangerapp.controller:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass ctec.screenchangerapp.controller:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass ctec.screenchangerapp:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
+           <tr><td><code>{@link #MenuItem_actionViewClass ctec.screenchangerapp.controller:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
              action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut ctec.screenchangerapp:android_alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checkable ctec.screenchangerapp:android_checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checked ctec.screenchangerapp:android_checked}</code></td><td> Whether the item is checked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_enabled ctec.screenchangerapp:android_enabled}</code></td><td> Whether the item is enabled.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_icon ctec.screenchangerapp:android_icon}</code></td><td> The icon associated with this item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_id ctec.screenchangerapp:android_id}</code></td><td> The ID of the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_menuCategory ctec.screenchangerapp:android_menuCategory}</code></td><td> The category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_numericShortcut ctec.screenchangerapp:android_numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_onClick ctec.screenchangerapp:android_onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
+           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut ctec.screenchangerapp.controller:android_alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checkable ctec.screenchangerapp.controller:android_checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checked ctec.screenchangerapp.controller:android_checked}</code></td><td> Whether the item is checked.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_enabled ctec.screenchangerapp.controller:android_enabled}</code></td><td> Whether the item is enabled.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_icon ctec.screenchangerapp.controller:android_icon}</code></td><td> The icon associated with this item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_id ctec.screenchangerapp.controller:android_id}</code></td><td> The ID of the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_menuCategory ctec.screenchangerapp.controller:android_menuCategory}</code></td><td> The category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_numericShortcut ctec.screenchangerapp.controller:android_numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_onClick ctec.screenchangerapp.controller:android_onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_orderInCategory ctec.screenchangerapp:android_orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_title ctec.screenchangerapp:android_title}</code></td><td> The title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_titleCondensed ctec.screenchangerapp:android_titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_visible ctec.screenchangerapp:android_visible}</code></td><td> Whether the item is shown/visible.</td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction ctec.screenchangerapp:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_orderInCategory ctec.screenchangerapp.controller:android_orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_title ctec.screenchangerapp.controller:android_title}</code></td><td> The title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_titleCondensed ctec.screenchangerapp.controller:android_titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_visible ctec.screenchangerapp.controller:android_visible}</code></td><td> Whether the item is shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction ctec.screenchangerapp.controller:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2427,7 +2438,7 @@ containing a value of this type.
           @attr description
            The alphabetic shortcut key.  This is the shortcut when using a keyboard
              with alphabetic keys. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_alphabeticShortcut}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_alphabeticShortcut}.
           @attr name android:android_alphabeticShortcut
         */
         public static final int MenuItem_android_alphabeticShortcut = 9;
@@ -2435,7 +2446,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the item is capable of displaying a check mark. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_checkable}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_checkable}.
           @attr name android:android_checkable
         */
         public static final int MenuItem_android_checkable = 11;
@@ -2444,7 +2455,7 @@ containing a value of this type.
           @attr description
            Whether the item is checked.  Note that you must first have enabled checking with
              the checkable attribute or else the check mark will not appear. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_checked}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_checked}.
           @attr name android:android_checked
         */
         public static final int MenuItem_android_checked = 3;
@@ -2452,7 +2463,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the item is enabled. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_enabled}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_enabled}.
           @attr name android:android_enabled
         */
         public static final int MenuItem_android_enabled = 1;
@@ -2461,7 +2472,7 @@ containing a value of this type.
           @attr description
            The icon associated with this item.  This icon will not always be shown, so
              the title should be sufficient in describing this item. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_icon}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_icon}.
           @attr name android:android_icon
         */
         public static final int MenuItem_android_icon = 0;
@@ -2469,7 +2480,7 @@ containing a value of this type.
           <p>
           @attr description
            The ID of the item. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_id}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_id}.
           @attr name android:android_id
         */
         public static final int MenuItem_android_id = 2;
@@ -2478,7 +2489,7 @@ containing a value of this type.
           @attr description
            The category applied to the item.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_menuCategory}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_menuCategory}.
           @attr name android:android_menuCategory
         */
         public static final int MenuItem_android_menuCategory = 5;
@@ -2487,7 +2498,7 @@ containing a value of this type.
           @attr description
            The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
              keyboard. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_numericShortcut}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_numericShortcut}.
           @attr name android:android_numericShortcut
         */
         public static final int MenuItem_android_numericShortcut = 10;
@@ -2496,7 +2507,7 @@ containing a value of this type.
           @attr description
            Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_onClick}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_onClick}.
           @attr name android:android_onClick
         */
         public static final int MenuItem_android_onClick = 12;
@@ -2505,7 +2516,7 @@ containing a value of this type.
           @attr description
            The order within the category applied to the item.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_orderInCategory}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_orderInCategory}.
           @attr name android:android_orderInCategory
         */
         public static final int MenuItem_android_orderInCategory = 6;
@@ -2513,7 +2524,7 @@ containing a value of this type.
           <p>
           @attr description
            The title associated with the item. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_title}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_title}.
           @attr name android:android_title
         */
         public static final int MenuItem_android_title = 7;
@@ -2522,7 +2533,7 @@ containing a value of this type.
           @attr description
            The condensed title associated with the item.  This is used in situations where the
              normal title may be too long to be displayed. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_titleCondensed}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_titleCondensed}.
           @attr name android:android_titleCondensed
         */
         public static final int MenuItem_android_titleCondensed = 8;
@@ -2530,7 +2541,7 @@ containing a value of this type.
           <p>
           @attr description
            Whether the item is shown/visible. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_visible}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_visible}.
           @attr name android:android_visible
         */
         public static final int MenuItem_android_visible = 4;
@@ -2571,14 +2582,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuView_android_headerBackground ctec.screenchangerapp:android_headerBackground}</code></td><td> Default background for the menu header.</td></tr>
-           <tr><td><code>{@link #MenuView_android_horizontalDivider ctec.screenchangerapp:android_horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemBackground ctec.screenchangerapp:android_itemBackground}</code></td><td> Default background for each menu item.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha ctec.screenchangerapp:android_itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemTextAppearance ctec.screenchangerapp:android_itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #MenuView_android_preserveIconSpacing ctec.screenchangerapp:android_preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
-           <tr><td><code>{@link #MenuView_android_verticalDivider ctec.screenchangerapp:android_verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_windowAnimationStyle ctec.screenchangerapp:android_windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
+           <tr><td><code>{@link #MenuView_android_headerBackground ctec.screenchangerapp.controller:android_headerBackground}</code></td><td> Default background for the menu header.</td></tr>
+           <tr><td><code>{@link #MenuView_android_horizontalDivider ctec.screenchangerapp.controller:android_horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemBackground ctec.screenchangerapp.controller:android_itemBackground}</code></td><td> Default background for each menu item.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha ctec.screenchangerapp.controller:android_itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemTextAppearance ctec.screenchangerapp.controller:android_itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
+           <tr><td><code>{@link #MenuView_android_preserveIconSpacing ctec.screenchangerapp.controller:android_preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #MenuView_android_verticalDivider ctec.screenchangerapp.controller:android_verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_windowAnimationStyle ctec.screenchangerapp.controller:android_windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -2597,7 +2608,7 @@ containing a value of this type.
           <p>
           @attr description
            Default background for the menu header. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_headerBackground}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_headerBackground}.
           @attr name android:android_headerBackground
         */
         public static final int MenuView_android_headerBackground = 4;
@@ -2605,7 +2616,7 @@ containing a value of this type.
           <p>
           @attr description
            Default horizontal divider between rows of menu items. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_horizontalDivider}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_horizontalDivider}.
           @attr name android:android_horizontalDivider
         */
         public static final int MenuView_android_horizontalDivider = 2;
@@ -2613,7 +2624,7 @@ containing a value of this type.
           <p>
           @attr description
            Default background for each menu item. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_itemBackground}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_itemBackground}.
           @attr name android:android_itemBackground
         */
         public static final int MenuView_android_itemBackground = 5;
@@ -2621,7 +2632,7 @@ containing a value of this type.
           <p>
           @attr description
            Default disabled icon alpha for each menu item that shows an icon. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_itemIconDisabledAlpha}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_itemIconDisabledAlpha}.
           @attr name android:android_itemIconDisabledAlpha
         */
         public static final int MenuView_android_itemIconDisabledAlpha = 6;
@@ -2629,7 +2640,7 @@ containing a value of this type.
           <p>
           @attr description
            Default appearance of menu item text. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_itemTextAppearance}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_itemTextAppearance}.
           @attr name android:android_itemTextAppearance
         */
         public static final int MenuView_android_itemTextAppearance = 1;
@@ -2645,7 +2656,7 @@ containing a value of this type.
           <p>
           @attr description
            Default vertical divider between menu items. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_verticalDivider}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_verticalDivider}.
           @attr name android:android_verticalDivider
         */
         public static final int MenuView_android_verticalDivider = 3;
@@ -2653,7 +2664,7 @@ containing a value of this type.
           <p>
           @attr description
            Default animations for the menu. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_windowAnimationStyle}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_windowAnimationStyle}.
           @attr name android:android_windowAnimationStyle
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
@@ -2663,11 +2674,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SearchView_android_imeOptions ctec.screenchangerapp:android_imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_inputType ctec.screenchangerapp:android_inputType}</code></td><td> The input type to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_maxWidth ctec.screenchangerapp:android_maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault ctec.screenchangerapp:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_queryHint ctec.screenchangerapp:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_imeOptions ctec.screenchangerapp.controller:android_imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_inputType ctec.screenchangerapp.controller:android_inputType}</code></td><td> The input type to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_maxWidth ctec.screenchangerapp.controller:android_maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault ctec.screenchangerapp.controller:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_queryHint ctec.screenchangerapp.controller:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
            </table>
            @see #SearchView_android_imeOptions
            @see #SearchView_android_inputType
@@ -2683,7 +2694,7 @@ containing a value of this type.
           <p>
           @attr description
            The IME options to set on the query text field. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_imeOptions}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_imeOptions}.
           @attr name android:android_imeOptions
         */
         public static final int SearchView_android_imeOptions = 2;
@@ -2691,7 +2702,7 @@ containing a value of this type.
           <p>
           @attr description
            The input type to set on the query text field. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_inputType}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_inputType}.
           @attr name android:android_inputType
         */
         public static final int SearchView_android_inputType = 1;
@@ -2699,7 +2710,7 @@ containing a value of this type.
           <p>
           @attr description
            An optional maximum width of the SearchView. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_maxWidth}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_maxWidth}.
           @attr name android:android_maxWidth
         */
         public static final int SearchView_android_maxWidth = 0;
@@ -2742,20 +2753,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset ctec.screenchangerapp:android_dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
+           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset ctec.screenchangerapp.controller:android_dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownSelector ctec.screenchangerapp:android_dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset ctec.screenchangerapp:android_dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
+           <tr><td><code>{@link #Spinner_android_dropDownSelector ctec.screenchangerapp.controller:android_dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset ctec.screenchangerapp.controller:android_dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownWidth ctec.screenchangerapp:android_dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_gravity ctec.screenchangerapp:android_gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
-           <tr><td><code>{@link #Spinner_android_popupBackground ctec.screenchangerapp:android_popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled ctec.screenchangerapp:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
+           <tr><td><code>{@link #Spinner_android_dropDownWidth ctec.screenchangerapp.controller:android_dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_gravity ctec.screenchangerapp.controller:android_gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
+           <tr><td><code>{@link #Spinner_android_popupBackground ctec.screenchangerapp.controller:android_popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled ctec.screenchangerapp.controller:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
              the spinner itself is enabled/disabled.</td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView ctec.screenchangerapp:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+           <tr><td><code>{@link #Spinner_popupPromptView ctec.screenchangerapp.controller:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_prompt ctec.screenchangerapp:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode ctec.screenchangerapp:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           <tr><td><code>{@link #Spinner_prompt ctec.screenchangerapp.controller:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode ctec.screenchangerapp.controller:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
            </table>
            @see #Spinner_android_dropDownHorizontalOffset
            @see #Spinner_android_dropDownSelector
@@ -2778,7 +2789,7 @@ containing a value of this type.
           @attr description
            Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_dropDownHorizontalOffset}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_dropDownHorizontalOffset}.
           @attr name android:android_dropDownHorizontalOffset
         */
         public static final int Spinner_android_dropDownHorizontalOffset = 4;
@@ -2786,7 +2797,7 @@ containing a value of this type.
           <p>
           @attr description
            List selector to use for spinnerMode="dropdown" display. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_dropDownSelector}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_dropDownSelector}.
           @attr name android:android_dropDownSelector
         */
         public static final int Spinner_android_dropDownSelector = 1;
@@ -2795,7 +2806,7 @@ containing a value of this type.
           @attr description
            Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_dropDownVerticalOffset}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_dropDownVerticalOffset}.
           @attr name android:android_dropDownVerticalOffset
         */
         public static final int Spinner_android_dropDownVerticalOffset = 5;
@@ -2803,7 +2814,7 @@ containing a value of this type.
           <p>
           @attr description
            Width of the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_dropDownWidth}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_dropDownWidth}.
           @attr name android:android_dropDownWidth
         */
         public static final int Spinner_android_dropDownWidth = 3;
@@ -2811,7 +2822,7 @@ containing a value of this type.
           <p>
           @attr description
            Gravity setting for positioning the currently selected item. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_gravity}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_gravity}.
           @attr name android:android_gravity
         */
         public static final int Spinner_android_gravity = 0;
@@ -2819,7 +2830,7 @@ containing a value of this type.
           <p>
           @attr description
            Background drawable to use for the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_popupBackground}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_popupBackground}.
           @attr name android:android_popupBackground
         */
         public static final int Spinner_android_popupBackground = 2;
@@ -2892,12 +2903,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle ctec.screenchangerapp:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ctec.screenchangerapp:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ctec.screenchangerapp:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme ctec.screenchangerapp:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth ctec.screenchangerapp:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle ctec.screenchangerapp:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle ctec.screenchangerapp.controller:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ctec.screenchangerapp.controller:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ctec.screenchangerapp.controller:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme ctec.screenchangerapp.controller:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth ctec.screenchangerapp.controller:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle ctec.screenchangerapp.controller:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
            </table>
            @see #Theme_actionDropDownStyle
            @see #Theme_dropdownListPreferredItemHeight
@@ -3000,9 +3011,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #View_android_focusable ctec.screenchangerapp:android_focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
-           <tr><td><code>{@link #View_paddingEnd ctec.screenchangerapp:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-           <tr><td><code>{@link #View_paddingStart ctec.screenchangerapp:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_android_focusable ctec.screenchangerapp.controller:android_focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
+           <tr><td><code>{@link #View_paddingEnd ctec.screenchangerapp.controller:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingStart ctec.screenchangerapp.controller:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -3020,7 +3031,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
              directly calling {@link android.view.View#requestFocus}, which will
              always request focus regardless of this view.  It only impacts where
              focus navigation will try to move focus. 
-          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.R.attr#android_focusable}.
+          <p>This corresponds to the global attribute          resource symbol {@link ctec.screenchangerapp.controller.R.attr#android_focusable}.
           @attr name android:android_focusable
         */
         public static final int View_android_focusable = 0;
